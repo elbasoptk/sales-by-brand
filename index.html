@@ -229,7 +229,7 @@
       margin-top: 15px;
     }
 
-.chart-card {
+    .chart-card {
       padding: 20px;
       min-width: 0;
     }
@@ -411,9 +411,7 @@
 
   <!-- LOGIN -->
   <section id="auth" class="card login">
-    <div style="font-size:35px;margin-bottom:12px"><img src="./logo-penjualan.jpg"
-alt="Logo Laporan Penjualan"
-class="logo-penjualan"></div>
+    <div style="font-size:35px;margin-bottom:12px"></div>
 
     <h2 id="authTitle">Selamat datang kembali</h2>
 
@@ -444,7 +442,7 @@ class="logo-penjualan"></div>
       </div>
 
       <button class="primary" style="width:100%">
-        Masuk ke Dashboard ?
+        Masuk/Login ?
       </button>
     </form>
 
@@ -454,7 +452,7 @@ class="logo-penjualan"></div>
         <input id="regName" required maxlength="100">
       </div>
 
-<div class="field">
+      <div class="field">
         <label>Email</label>
         <input id="regEmail" type="email" required>
       </div>
@@ -609,7 +607,7 @@ class="logo-penjualan"></div>
             </tr>
           </thead>
 
-<tbody id="salesBody"></tbody>
+          <tbody id="salesBody"></tbody>
         </table>
 
         <div id="empty" class="empty hidden">
@@ -784,7 +782,7 @@ class="logo-penjualan"></div>
       $('welcomeTitle').textContent =
         'Halo, ' + currentUser.name + ' ??';
 
-$('userRole').textContent =
+      $('userRole').textContent =
         currentUser.role.toUpperCase();
 
       tick();
@@ -981,7 +979,7 @@ $('userRole').textContent =
         responsive: true,
         maintainAspectRatio: false,
 
-indexAxis: items.length > 7 ? 'y' : 'x',
+        indexAxis: items.length > 7 ? 'y' : 'x',
 
         plugins: {
           legend: {
